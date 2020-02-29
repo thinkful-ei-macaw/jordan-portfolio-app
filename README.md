@@ -1,4 +1,4 @@
-#jordan-portfolio-app
+# jordan-portfolio-app
 
 Here is the first version of my portfolio page. 
 
