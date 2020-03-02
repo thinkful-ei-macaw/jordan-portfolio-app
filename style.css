@@ -22,13 +22,13 @@ main {
 .intro-page-container {
     text-align: center;
     background-color: #E4DFDA;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .intro-page-container h1 {
     text-align: left;
-    font-size: 50px;
+    font-size: 44px;
     font-family: "Permanent Marker", sans-serif;
     letter-spacing: .3rem;
 }
@@ -36,7 +36,7 @@ main {
 .intro-page-container p {
     font-family: "Permanent Marker", sans-serif;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 100;
     line-height: 1.5em;
     margin: 2em auto;
@@ -49,12 +49,14 @@ figure {
 
 figure img {
     margin: .5em auto 0;
-    max-width: 400px;
+    max-width: 250px;
 }
 
 /******* Nav Bar*******/
 
-
+header {
+    display: flex;
+}
 a {
     font-family: "Permanent Marker", sans-serif;
     font-weight: 500;
@@ -62,15 +64,8 @@ a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    max-width: 150%;
-}
-
 .nav_links {
     list-style-type: none;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 .nav_links li {
@@ -83,7 +78,7 @@ a {
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
-    font-size: 29px;
+    font-size: 16px;
 }
 
 .nav_links li a:hover {
