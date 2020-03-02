@@ -38,7 +38,7 @@ main {
     text-align: left;
     font-size: 1em;
     font-weight: 100;
-    line-height: 1.5em;
+    line-height: 2em;
     margin: 2em auto;
     letter-spacing: .1;
 }
@@ -68,8 +68,13 @@ a {
     list-style-type: none;
 }
 
+ul.nav_links {
+    display: flex;
+    align-items: center;
+}
+
 .nav_links li {
-    padding: 10px;
+    padding: 20px;
 }
 
 a {
@@ -91,9 +96,8 @@ a {
     flex-direction: column;
     justify-content: space-between;
     background-color: #C2666B;
-    height: 650px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .about-me-left-hero-section {
@@ -101,9 +105,11 @@ a {
     flex-direction: column;
 }
 
-.about-me-left-hero-section h1 {
+.about-me-left-hero-section h2 {
     padding: 0px;
-    font-size: 40px;
+    font-size: 44px;
+    font-family: "Permanent Marker", sans-serif;
+
 }
 
 .about-me-left-hero-section p {
@@ -123,12 +129,10 @@ a {
     justify-content: space-between;
     background-color: #48A9A6;
     max-height: auto;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
-h2 {
-    font-size: 70px;
+.projects-container h2 {
+    font-size: 44px;
     font-family: "Permanent Marker", sans-serif;
     letter-spacing: .3rem;
 }
