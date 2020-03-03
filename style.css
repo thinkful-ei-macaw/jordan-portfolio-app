@@ -13,7 +13,7 @@ body {
 main {
     display: flex;
     flex-flow: column;
-    border-radius: 10%;
+    
     max-width: 100%;
 }
 
@@ -135,6 +135,7 @@ a {
     font-size: 44px;
     font-family: "Permanent Marker", sans-serif;
     letter-spacing: .3rem;
+     padding-left: 10px;
 }
 
 .box-area {
@@ -229,25 +230,27 @@ a {
 }
 
 .footer-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #E4DFDA;
-    margin-left: 30px;
-    margin-right: 30px;
+}
+
+.footer-container p {
+    background-color: #E4DFDA;
 }
 
 .footer-container h1 {
     font-family: "Permanent Marker", sans-serif;
-    text-align: center;
     font-size: 44px;
     font-weight: 100;
     line-height: 1.5em;
     letter-spacing: .1;
 
+}
+
     @media screen and (min-width: 820px) and (max-width: 1400px) {
-        header {
-            display: flex;
-            justify-content: #E4DFDA;
-        }
+       
 
         a {
             font-size: 25px;
@@ -268,30 +271,41 @@ a {
         }
 
         .intro-page-container {
-            text-align: left;
+            display: flex;
             justify-content: space-between;
+            max-width: 100%;
         }
 
+        .left-hero-section {
+            max-width: 40%;
+        }
         .intro-page-container h1 {
-            font-size: 3em;
+            font-size: 44px;
         }
 
         .intro-page-container p {
-            margin-right: 100px;
             padding: 0;
             font-size: 20px;
         }
 
-        figure img {
-            margin-bottom: 50px;
-            max-width: 100%;
+      .photo {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      figure {
+          display: inline-block;
+      }
+
+
+        .left-hero-section {
+            display: inline-block;
+            vertical-align: top;
         }
+
+        .product-box-container {
+            display: flex;
+        }
+
     }
 
-@media (min-device-width: 1200px) and (max-device-width: 1600px)  {
-
-figure img {
-    max-width: 1000px;
-}
-
-}
