@@ -4,6 +4,7 @@ html,
 body {
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 
 * {
@@ -49,7 +50,9 @@ figure {
 
 figure img {
     margin: .5em auto 0;
-    max-width: 250px;
+    width: 100%;
+    max-width: 40vw;
+    
 }
 
 /******* Nav Bar*******/
@@ -60,25 +63,33 @@ header {
 a {
     font-family: "Permanent Marker", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
 }
 
-.nav_links {
-    list-style-type: none;
+nav {
+  width:100%;
+  padding: 10px 10px;
 }
 
-ul.nav_links {
+nav ul {
     display: flex;
     align-items: center;
+   list-style-type: none;
+   justify-content: center;
+   width: 100%;
+   margin: 0;
+   padding: 0;
 }
 
 .nav_links li {
-    padding: 20px;
+   margin: 0 1em;
+    display: inline-block;
 }
 
 a {
     color: #C2666B;
+    
 }
 
 .nav_links li a {
@@ -142,15 +153,13 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .single-box {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: auto;
     width: 400px;
     border-radius: 10px;
@@ -213,13 +222,20 @@ a {
 }
 
 .img-text {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-direction: column;
     font-family: "Khula", sans-serif;
     text-align: left;
     padding-top: 20px;
 }
 
+.img-text p:first-of-type {
+    flex:1;
+}
+
 .img-text p {
-    font-family: "Khula", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -249,35 +265,33 @@ a {
 
 }
 
-    @media screen and (min-width: 820px) and (max-width: 1400px) {
+    @media screen and (min-width: 820px) {
        
-
         a {
             font-size: 25px;
-        }
-
-        nav {
-            margin: 0;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
         }
 
         nav ul li {
             padding: 0.5em 2em;
         }
 
+      nav ul {
+            justify-content: flex-end;
+        }
+
         .intro-page-container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            max-width: 100%;
+            height: 550px;
+        }
+
+        .intro-page-container > div {
+            flex: 1;
         }
 
         .left-hero-section {
-            max-width: 40%;
+            padding-left: 5px;
         }
         .intro-page-container h1 {
             font-size: 44px;
@@ -288,9 +302,10 @@ a {
             font-size: 20px;
         }
 
-      .photo {
-        display: inline-block;
-        vertical-align: top;
+      
+
+      .profile-photo {
+       
       }
 
       figure {
@@ -305,7 +320,16 @@ a {
 
         .product-box-container {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
         }
 
+        .box-area {
+            width: 40%;
+    }
+    .single-box:not(.space) {
+        min-height: 700px;
+    }
     }
 
