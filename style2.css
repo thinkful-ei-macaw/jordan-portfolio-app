@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Khula|Permanent+Marker&display=swap');
+
 
 html,
 body {
@@ -22,7 +22,6 @@ main {
 
 .intro-page-container {
     text-align: center;
-    background-color: #E4DFDA;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -49,7 +48,11 @@ figure {
 }
 
 figure img {
-    width: 110%;
+    margin: .5em auto 0;
+    width: 100%;
+    max-width: 40vw;
+    border: 6px solid black;
+
 }
 
 /******* Nav Bar*******/
@@ -85,10 +88,7 @@ nav ul {
     display: inline-block;
 }
 
-a {
-    color: #C2666B;
 
-}
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
@@ -96,7 +96,7 @@ a {
 }
 
 .nav_links li a:hover {
-    color: #C1666B;
+    
 }
 
 /******************* About me**************/
@@ -104,9 +104,9 @@ a {
 .about-me-container {
     flex-direction: column;
     justify-content: space-between;
-    background-color: #C2666B;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: grey;
 }
 
 .about-me-left-hero-section {
@@ -136,7 +136,7 @@ a {
 .projects-container {
     flex-direction: column;
     justify-content: space-between;
-    background-color: #48A9A6;
+   
     max-height: auto;
 }
 
@@ -161,7 +161,7 @@ a {
     height: auto;
     width: 400px;
     border-radius: 10px;
-    background-color: #FFC493;
+    
     text-align: center;
     margin: 20px;
     padding: 20px;
@@ -172,14 +172,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 300px;
     height: 300px;
-    border: 6px solid #fff;
+    border: 6px solid black;
     border-radius: 10%;
     margin-bottom: 10px;
     padding: 20px;
     background-size: cover;
-    background-image: url("./img/1.jpg");
     background-position: center center;
 }
 
@@ -187,14 +186,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 300px;
     height: 300px;
-    border: 6px solid #fff;
+    border: 6px solid black;
     border-radius: 10%;
     margin-bottom: 10px;
     padding: 20px;
     background-size: cover;
-    background-image: url("./img/bookmark.png");
     background-position: center center;
 }
 
@@ -202,15 +200,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 300px;
     height: 300px;
-    border: 6px solid #fff;
+    border: 6px solid black;
     border-radius: 10%;
     margin-bottom: 10px;
     padding: 20px;
     background-size: cover;
-    background-image: url("./img/forest.png");
     background-position: center center;
+    background
 }
 
 .header-text {
@@ -240,18 +238,16 @@ a {
 }
 
 .img-text a {
-    font-color: white;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E4DFDA;
+    background-color: grey;
 }
 
 .footer-container p {
-    background-color: #E4DFDA;
 }
 
 .footer-container h1 {
@@ -263,17 +259,7 @@ a {
 
 }
 
-@media screen and (max-width: 320px) {
-    .single-box {
-        padding:0;
-}
-
-}
-
-
-
-
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 820px) {
 
     a {
         font-size: 25px;
@@ -319,9 +305,6 @@ a {
         display: inline-block;
     }
 
-    figure img {
-        max-width: 40vw;
-    }
 
     .left-hero-section {
         display: inline-block;
@@ -337,11 +320,9 @@ a {
 
     .box-area {
         width: 40%;
-        margin: 50px;
     }
 
     .single-box:not(.space) {
         min-height: 700px;
     }
 }
-
