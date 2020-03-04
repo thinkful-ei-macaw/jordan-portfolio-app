@@ -86,7 +86,7 @@ nav ul {
 }
 
 a {
-    color: #C2666B;
+    color: black;
 
 }
 
@@ -240,7 +240,7 @@ a {
 }
 
 .img-text a {
-    font-color: white;
+color: black;
 }
 
 .footer-container {
@@ -252,6 +252,7 @@ a {
 
 .footer-container p {
     background-color: #E4DFDA;
+    color: white;
 }
 
 .footer-container h1 {
@@ -262,16 +263,6 @@ a {
     letter-spacing: .1;
 
 }
-
-@media screen and (max-width: 320px) {
-    .single-box {
-        padding:0;
-}
-
-}
-
-
-
 
 @media screen and (min-width: 760px) {
 
@@ -317,10 +308,6 @@ a {
 
     figure {
         display: inline-block;
-    }
-
-    figure img {
-        max-width: 40vw;
     }
 
     .left-hero-section {
